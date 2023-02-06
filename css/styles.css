@@ -14,29 +14,29 @@ body {
     font-size: 1rem;
 }
 
-/************** Jumbotron **************/
-.jumbotron {
+a {
+    color: #6fffe9;
+    text-decoration: none;
+}
+
+a:hover {
     color: #fff;
-    text-align: center;
-    background-color: #2a9d8f;
-    /* background-image: linear-gradient(120deg, #155799, #159957); */
-    padding: 5rem 6rem;
+    transition: 0.35s;
 }
 
-.jumbo-name {
-    font-size: 3.25rem;
-    margin-top: 0;
-    font-weight: bold;
+h1 {
+    color: #fff;
 }
 
-.jumbo-text {
-    font-size: 1.5rem;
-    margin-bottom: 0;
+p {
+    color: #bbb;
+    line-height: 1.6;
+    transition: 0.35s;
 }
 
 /************** navbar **************/
 nav {
-    background-color: #264653;
+    background-color: #5bc0be;
 }
 
 .nav-bar {
@@ -59,6 +59,7 @@ nav {
     padding: 1rem 0.75rem;
     text-align: center;
     margin: 0;
+    color: #fff;
 }
 
 .nav-bar-button i {
@@ -76,7 +77,7 @@ nav {
 .nav-bar-element {
     display: block;
     text-decoration: none;
-    color: #999;
+    color: #333;
     font-size: 1rem;
     padding: 1rem 0.75rem;
     transition: 0.35s;
@@ -93,25 +94,38 @@ nav {
 }
 
 /************** general sections **************/
-.full-container {
+.main-parent {
     width: 100%;
-    margin: 0 auto;
-    /* margin: 5px solid #F00; */
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1c2541;
 }
 
-.half-container {
+.left-layout {
+    width: 25%;
+    border: 1px solid #000;
+    min-height: 100vh;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.right-layout {
     width: 75%;
-    margin: 0 auto;
-    /* margin: 5px solid #F00; */
+    background-color: #3a506b;
+    padding: 2.5rem;
 }
 
-.title-section {
-    font-size: 2.25rem;
-    width: 100%;
+.img-about-me {
+    border-radius: 50%;
+    width: 70%;
+    display: block;
+    margin: auto;
+    border: 0.5rem solid #6fffe9;
+    transition: 0.35s;
 }
 
-.subtitle-section {
-    font-size: 1.75rem;
+.img-about-me:hover {
+    border: 0.5rem solid #fff;
 }
 
 /************** footer **************/
@@ -119,177 +133,222 @@ footer {
     padding: 2rem;
     text-align: center;
     color: #fff;
-    background-color: #001219;
+    background-color: #0b132b;
 }
 
 /************** index.html **************/
 
-.mosaic-parent {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+.text-semblanza {
+    max-width: 95ch;
 }
 
-.mosaic {
-    width:50%;
-    text-align: center;
+.intereses-container{
+    max-width: 95ch;
+}
+
+.intereses-badge {
+    background-color: #FF8857;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: 0.35s;
+}
+
+.intereses-badge:hover {
+    background-color: #FFBCB0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.timeline {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    margin-left: 1rem;
 }
 
-.mosaic-image {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.mosaic-overlay {
-    display: flex;
-    width: 100%;
-    padding: 8rem 0.5rem;
-    left: 0;
-    right: 0;
+.timeline::after {
+    content: '';
     position: absolute;
-    overflow: hidden;
-    height: 100%;
-    transition: .5s ease;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
+    width: 0.375rem;
+    background-color: #6fffe9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: -0.1875rem;
 }
 
-.mosaic-overlay:hover {
-    background-color: #ffffff00;
+.container {
+    padding: 0.625rem 2.5rem;
+    position: relative;
+    background-color: inherit;
+    width: 70%;
 }
 
-.mosaic-head {
-    font-size: 2.75rem;
-    font-weight: bold;
-    padding: 0.313rem;
+.container::after {
+    content: '';
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    left: -0.95rem;
+    background-color: white;
+    border: 0.3125rem solid #CC4545;
+    top: 0.9375rem;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.container::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 1.5625rem;
+    width: 0;
+    z-index: 1;
+    left: 1.875rem;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+  
+.timeline-title {
+    font-size: 1.2rem;
+    background-color: #fff;
+    margin: 0.125rem 0;
+    display: inline-block;
+    border-radius: 0.3125rem;
+    padding: 0.125rem 10px;
+    transition: 0.35s;
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    display: inline-block;
+    background-color: #CC4545;
+    border-radius: 0.3125rem;
+    padding: 0.125rem 10px;
     color: #fff;
-    justify-content: center;
-    border-bottom: 0.25rem solid #fff;
-    transition: .5s ease;
+    transition: 0.35s;
 }
 
-.mosaic-overlay:hover > .mosaic-head {
-    padding: 1.25rem 0.313rem;
+.container:hover .timeline-title, .container:hover p  {
+    margin-left: 1rem;
 }
 
-.about-title-bg {
-    background-color: #ff595ea0;
+.container:hover .timeline-date {
+    background-color: #FF8857;
 }
 
-.about-repositories-bg {
-    background-color: #ffca3aa0;
-}
-
-.about-docencia-bg {
-    background-color: #1982c4a0;
-}
-
-.about-research-bg {
-    background-color: #6a4c93a0;
+.timeline-text {
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-top: 0;
 }
 
 /************** docencia.html **************/
 
-.course-title {
-    background-color: #e9d8a6;
-    padding: 3.5rem 0;
-}
-
-.course-title-sub {
-    width:75%;
-    margin: 0 auto;
-}
-
-.course-title-sub > h1 {
-    font-size: 3.25rem;
-    margin: 0;
-}
-
-.course-title-sub > h2 {
-    font-size: 1.75rem;
-    margin: 0;
-    color: #888;
-}
-
-.course-info-container {
+.courses-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.course-info-element {
-    width: 47%;
-    margin: 0.625rem;
-    border: 2px solid #94d2bd;;
-    
-}
-
-.course-info-element > h2 {
-    font-size: 1.25rem;
-    margin: 0 0 0.313rem 0;
-    color: #fff;
-    background-color: #94d2bd;
-    padding: 0.625rem;
-}
-
-.course-info-element > table {
-    width: 100%;
-    margin: 0 0.625rem 0.625rem 0.625rem;
-}
-
-.file-resource {
-    display: block;
-    padding: 1.25rem;
-    font-size: 1.25rem;
-    border-radius: 0.313rem;
-    color: #005f73;
-    border: 0.063rem solid #005f73;
-    margin: 0.313rem 0;
-    text-decoration: none;
-}
-
-.file-resource:hover {
-    color: #ee9b00;
-    border: 0.063rem solid #ee9b00;
-}
-
-
-.bib-item {
+.courses-child {
     display: flex;
-    margin: 1.25rem 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 15rem;
+    background-color: #4598CC;
+    padding: 1.5rem;
+    text-align: center;
     color: #fff;
+    border-radius: 5px;
+    transition: 0.35s;
+    margin: 2px;
 }
 
-.bib-item-info > p, h3 {
-    /* border: 2px solid #fff; */
-    margin: 0.313rem 0
+.courses-child > i {
+    display:block;
+    width: 100%;
+    margin: 0;
 }
 
-.bib-item-image {
+.courses-child > p {
+    margin: 0;
+    color: #fff;
     width: 100%;
 }
 
-.bib-item-info {
-    padding: 0.75rem;
-    background-color: #9b2226;
-    width: 100%;
+.courses-child:hover {
+    background-color: #819099;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.bib-item-info:hover {
-    opacity: 0.75;
+/************** publicaciones.html **************/
+.bib-item {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #bbb;
+    border-left: 0.3125rem solid #CC4545;
+    padding: 0.625rem;
+    background-color: #1c2541;
+    border-radius: 0.3125rem;
+    
+    transition: 0.35s;
+}
+
+.bib-item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #444;
+    color: #fff;
+    margin-left: 2rem;
+}
+
+/************** repositorios.html **************/
+
+.respository-item {
+    display: block;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #bbb;
+    border-left: 0.3125rem solid #CC4545;
+    padding: 0.625rem;
+    background-color: #1c2541;
+    border-radius: 0.3125rem;
+    
+    transition: 0.35s;
+
+}
+
+.respository-item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #444;
+    color: #fff;
+    margin-left: 2rem;
 }
 
 /************** Media queries **************/
 @media only screen and (max-width: 1024px) {
-    .mosaic {
-        width:100%;
+    .left-layout {
+        width: 100%;
+        min-height: 100%;
+        padding: 1.5rem;
     }
+
+    .right-layout {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .img-about-me {
+        width: 50%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    /******** docencia *********/
 }
 
 @media only screen and (min-width: 768px) {
@@ -318,5 +377,13 @@ footer {
 
     .active {
         background-color: #666;
+    }
+
+}
+
+@media only screen and (max-width: 680px) {
+    .courses-child {
+        width: 100%;
+        height: auto;
     }
 }
