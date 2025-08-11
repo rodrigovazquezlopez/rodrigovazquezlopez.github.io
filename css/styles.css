@@ -9,34 +9,25 @@ html {
 body {
     padding: 0;
     margin: 0;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: "Montserrat", sans-serif;
     line-height: 1.5;
     font-size: 1rem;
 }
 
 a {
-    color: #6fffe9;
     text-decoration: none;
+    color: #005a70;
 }
 
 a:hover {
-    color: #fff;
-    transition: 0.35s;
-}
-
-h1 {
-    color: #fff;
-}
-
-p {
-    color: #bbb;
-    line-height: 1.6;
+    color: #cc4545;
     transition: 0.35s;
 }
 
 /************** navbar **************/
 nav {
-    background-color: #5bc0be;
+    background-color: #1d2d44;
 }
 
 .nav-bar {
@@ -63,23 +54,23 @@ nav {
 }
 
 .nav-bar-button i {
-    padding: 0.75rem 1rem;   
+    padding: 0.75rem 1rem;
     text-align: center;
     position: absolute;
     right: 0;
     top: 0;
 }
 
-.nav-bar-base  {
+.nav-bar-base {
     float: left;
 }
 
 .nav-bar-element {
     display: block;
     text-decoration: none;
-    color: #333;
+    color: #999;
     font-size: 1rem;
-    padding: 1rem 0.75rem;
+    padding: 1rem 1.25rem;
     transition: 0.35s;
 }
 
@@ -94,38 +85,75 @@ nav {
 }
 
 /************** general sections **************/
-.main-parent {
+.container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: #1c2541;
 }
 
-.left-layout {
+.contact-info {
     width: 25%;
-    border: 1px solid #000;
     min-height: 100vh;
     padding: 2.5rem;
     text-align: center;
+    background-color: #005a70;
+    color: #f5f5e4;
 }
 
-.right-layout {
+.main-content {
     width: 75%;
-    background-color: #3a506b;
+    background-color: #f5f5e4;
     padding: 2.5rem;
+    color: #003233;
 }
 
-.img-about-me {
+.basic-info {
+    margin-bottom: 1.5em;
+}
+
+.basic-info h1 {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    line-height: 1;
+}
+
+.basic-info h2 {
+    margin: 0;
+    border: 1px solid #fff;
+    font-weight: lighter;
+}
+
+.basic-info-img {
     border-radius: 50%;
     width: 70%;
     display: block;
-    margin: auto;
-    border: 0.5rem solid #6fffe9;
+    margin: 2em auto;
+    border: 0.5rem solid #f5f5e4;
     transition: 0.35s;
 }
 
-.img-about-me:hover {
+.basic-info-img:hover {
     border: 0.5rem solid #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.social-links {
+    padding: 0.75em 0;
+    text-align: left;
+    border-top: 1px solid #f5f5e4;
+    border-bottom: 1px solid #f5f5e4;
+}
+
+.social-links h2 {
+    margin-top: 0;
+}
+
+.social-link {
+    display: block;
+    color: #f5f5e4;
+    margin: 0.25em 0;
+    margin-left: 1em;
 }
 
 /************** footer **************/
@@ -138,16 +166,19 @@ footer {
 
 /************** index.html **************/
 
-.text-semblanza {
-    max-width: 95ch;
+.section {
+    max-width: 85ch;
+    line-height: 1.6;
+    transition: 0.35s;
+    margin-bottom: 3em;
 }
 
-.intereses-container{
-    max-width: 95ch;
+.section h2 {
+    font-size: 1.75em;
 }
 
 .intereses-badge {
-    background-color: #FF8857;
+    background-color: #ff8857;
     display: inline-block;
     padding: 5px 10px;
     font-size: 0.9rem;
@@ -157,7 +188,7 @@ footer {
 }
 
 .intereses-badge:hover {
-    background-color: #FFBCB0;
+    background-color: #ffbcb0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -167,37 +198,37 @@ footer {
 }
 
 .timeline::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 0.375rem;
-    background-color: #6fffe9;
+    background-color: #0081a7;
     top: 0;
     bottom: 0;
     left: 0;
     margin-left: -0.1875rem;
 }
 
-.container {
+.timeline-section {
     padding: 0.625rem 2.5rem;
     position: relative;
     background-color: inherit;
-    width: 70%;
+    width: 100%;
 }
 
-.container::after {
-    content: '';
+.timeline-section::after {
+    content: "";
     position: absolute;
     width: 1.25rem;
     height: 1.25rem;
     left: -0.95rem;
     background-color: white;
-    border: 0.3125rem solid #CC4545;
+    border: 0.3125rem solid #cc4545;
     top: 0.9375rem;
     border-radius: 50%;
     z-index: 1;
 }
 
-.container::before {
+.timeline-section::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -209,8 +240,8 @@ footer {
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
 }
-  
-.timeline-title {
+
+.timeline-section-title {
     font-size: 1.2rem;
     background-color: #fff;
     margin: 0.125rem 0;
@@ -218,30 +249,50 @@ footer {
     border-radius: 0.3125rem;
     padding: 0.125rem 10px;
     transition: 0.35s;
+    font-weight: bold;
 }
 
-.timeline-date {
+.timeline-section-date {
     font-size: 0.9rem;
     display: inline-block;
-    background-color: #CC4545;
+    background-color: #cc4545;
     border-radius: 0.3125rem;
     padding: 0.125rem 10px;
     color: #fff;
     transition: 0.35s;
 }
 
-.container:hover .timeline-title, .container:hover p  {
+.institution,
+.work-place {
+    font-weight: bold;
+    transition: 0.35s;
+}
+
+.professional-id {
+    transition: 0.35s;
+}
+
+.professional-id span {
+    font-weight: bold;
+}
+
+.work-department {
+    font-style: italic;
+}
+
+.work-description {
+    font-weight: 300;
+}
+
+.timeline-section:hover .timeline-section-title,
+.timeline-section:hover .institution,
+.timeline-section:hover .professional-id,
+.timeline-section:hover .work-place {
     margin-left: 1rem;
 }
 
-.container:hover .timeline-date {
-    background-color: #FF8857;
-}
-
-.timeline-text {
-    font-size: 0.95rem;
-    font-style: italic;
-    margin-top: 0;
+.timeline-section:hover .timeline-section-date {
+    background-color: #ff8857;
 }
 
 /************** docencia.html **************/
@@ -251,35 +302,38 @@ footer {
     flex-wrap: wrap;
 }
 
-.courses-child {
+.course {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 20rem;
-    height: 15rem;
-    background-color: #4598CC;
+    height: 13rem;
+    background-color: #4598cc;
     padding: 1.5rem;
     text-align: center;
     color: #fff;
     border-radius: 5px;
     transition: 0.35s;
-    margin: 2px;
+    margin: 0.125em;
+    font-weight: bold;
 }
 
-.courses-child > i {
-    display:block;
+.course>i {
+    display: block;
     width: 100%;
     margin: 0;
 }
 
-.courses-child > p {
+.course-group,
+.course-name,
+.course-id {
     margin: 0;
     color: #fff;
     width: 100%;
 }
 
-.courses-child:hover {
+.course:hover {
     background-color: #819099;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -288,12 +342,10 @@ footer {
 .bib-item {
     margin-left: 1.5rem;
     margin-bottom: 1rem;
-    color: #bbb;
-    border-left: 0.3125rem solid #CC4545;
+    background-color: #fff;
+    border-left: 0.3125rem solid #cc4545;
     padding: 0.625rem;
-    background-color: #1c2541;
     border-radius: 0.3125rem;
-    
     transition: 0.35s;
 }
 
@@ -311,12 +363,11 @@ footer {
     margin-left: 1.5rem;
     margin-bottom: 1rem;
     color: #bbb;
-    border-left: 0.3125rem solid #CC4545;
+    border-left: 0.3125rem solid #cc4545;
     padding: 0.625rem;
     background-color: #1c2541;
-    border-radius: 0.3125rem;  
+    border-radius: 0.3125rem;
     transition: 0.35s;
-
 }
 
 .respository-item:hover {
@@ -354,7 +405,8 @@ footer {
     .nav-bar-button {
         display: none;
     }
-    .nav-bar-base  {
+
+    .nav-bar-base {
         float: left;
     }
 }
@@ -369,7 +421,7 @@ footer {
         display: none;
     }
 
-    .nav-bar-base  {
+    .nav-bar-base {
         float: none;
         text-align: center;
     }
@@ -377,7 +429,6 @@ footer {
     .active {
         background-color: #666;
     }
-
 }
 
 @media only screen and (max-width: 680px) {

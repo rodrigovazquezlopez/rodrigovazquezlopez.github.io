@@ -1,68 +1,98 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rodrigo Vázquez-López - Inicio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
-  </head>
-  <body>
-    <nav>
-      <div class="nav-bar-button" id="btn_menu">
-        <p class="nav-bar-button-title">Menú</p>
-        <i class="fa fa-bars fa-2x"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Rodrigo Vázquez-López - Investigador y académico</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-bar-button" id="btn_menu">
+      <p class="nav-bar-button-title">Menú</p>
+      <i class="fa fa-bars fa-2x"></i>
+    </div>
+    <ul class="nav-bar" id="menu">
+      <li class="nav-bar-base">
+        <a href="index.html" class="nav-bar-element active"><i class="fa fa-fw fa-home"></i> Inicio</a>
+      </li>
+      <li class="nav-bar-base">
+        <a href="publicaciones.html" class="nav-bar-element"><i class="fa fa-fw fa-university"></i> Publicaciones</a>
+      </li>
+      <li class="nav-bar-base">
+        <a href="docencia.html" class="nav-bar-element"><i class="fa fa-fw fa-book"></i> Docencia</a>
+      </li>
+      <li class="nav-bar-base">
+        <a href="investigacion.html" class="nav-bar-element"><i class="fa fa-fw fa-flask"></i> Investigación</a>
+      </li>
+      <li class="nav-bar-base">
+        <a href="repositorios.html" class="nav-bar-element"><i class="fa fa-brands fa-github"></i> Repositorios</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <aside class="contact-info">
+      <div class="basic-info">
+        <h1>Dr. Rodrigo Vázquez-López</h1>
+        <img class="basic-info-img" src="./img/me.jpg" alt="Me" />
+        <div>Profesor-Investigador</div>
+        <div>SNII nivel C (2025-2028)</div>
+        <div>Miembro de la AMEXCOMP</div>
       </div>
-      <ul class="nav-bar" id="menu">
-        <li class="nav-bar-base">
-          <a href="index.html" class="nav-bar-element active"><i class="fa fa-fw fa-home"></i> Inicio</a>
-        </li>
-        <li class="nav-bar-base">
-          <a href="publicaciones.html" class="nav-bar-element"><i class="fa fa-fw fa-university"></i> Publicaciones</a>
-        </li>
-        <li class="nav-bar-base">
-          <a href="docencia.html" class="nav-bar-element"><i class="fa fa-fw fa-book"></i> Docencia</a>
-        </li>
-        <li class="nav-bar-base">
-          <a href="investigacion.html" class="nav-bar-element"><i class="fa fa-fw fa-flask"></i> Investigación</a>
-        </li>
-        <li class="nav-bar-base">
-          <a href="repositorios.html" class="nav-bar-element"><i class="fa fa-fw fa-github"></i> Repositorios</a>
-        </li>
-      </ul>
-    </nav>
-    <section class="main-parent">
-      <div class="left-layout">
-        <img class="img-about-me" src="./img/me.jpg" alt="Me" />
-        <h1>Rodrigo Vázquez-López</h1>
-        <p>Profesor-Investigador</p>
-        <p>Profesor de asignatura en la Universidad Autónoma de la Ciudad de México</p>
-        <!-- <p><a href="mailto:rvazquez@cua.uam.mx" target="_blank"><i class="fa fa-fw fa-envelope-o"></i>rvazquez@cua.uam.mx</a></p> -->
-        <div>
-          <a href="https://github.com/rodrigovazquezlopez" target="_blank"><i class="fa fa-fw fa-3x fa-github"></i></a>
-          <!-- <a href="https://twitter.com/rodrigo_em2" target="_blank"><i class="fa fa-fw fa-3x fa-twitter"></i></a>
-          <a href="https://www.youtube.com/channel/UCB80z5s5sPZ7R8fnIZNMW-w" target="_blank"><i class="fa fa-fw fa-3x fa-youtube-play"></i></a> -->
-        </div>
+
+      <!-- <p><a href="mailto:rvazquez@cua.uam.mx" target="_blank"><i class="fa fa-fw fa-envelope-o"></i>rvazquez@cua.uam.mx</a></p> -->
+      <div class="social-links">
+        <h2>Links</h2>
+        <a href="https://github.com/rodrigovazquezlopez" target="_blank" class="social-link"><i
+            class="fa-brands fa-square-github"></i> Github</a>
+        <a href="https://www.linkedin.com/in/r-vazquez-lopez/" target="_blank" class="social-link"><i
+            class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="https://orcid.org/0000-0001-7556-8512/" target="_blank" class="social-link"><i
+            class="fa-brands fa-orcid"></i> Orcid</a>
+        <a href="https://www.researchgate.net/profile/Rodrigo-Vazquez-Lopez" target="_blank" class="social-link"><i
+            class="fa-brands fa-researchgate"></i> ResearchGate</a>
+        <a href="https://scholar.google.com/citations?user=Ahp9FOEAAAAJ&hl=es" target="_blank" class="social-link"><i
+            class="fa-brands fa-google-scholar"></i> Google Scholar</a>
       </div>
-      <div class="right-layout">
-        <h1>Dr. Rodrigo Vázquez López</h1>
-        <p class="text-semblanza">
-          Soy Profesor-Investigador. Desde pequeño he tenido tres pasiones importantes: la música, el transporte público y la tecnología. El destino y la vida quisieron que me formara como un Ingeniero en Computación apasionado por la programación, los algoritmos y el diseño de
-          sistemas embebidos. Posteriormente, obtuve el grado de Maestro en Tecnología de Cómputo especializandome en temas como internet de las cosas y cómputo en la nube. En 2023 obtuve el grado de doctorado en Ingeniería de
-          Sistemas Robóticos y Mecatrónicos donde me encuentro trabajando temas de algoritmos inteligentes aplicados a nanocuadrotores.
+    </aside>
+    <main class="main-content">
+      <section class="section">
+        <h2>Acerca de mí</h2>
+        <p>
+          Soy Profesor-Investigador. Desde pequeño he tenido tres pasiones importantes: la música, el transporte público
+          y la tecnología. El destino y la vida quisieron que me formara como un Ingeniero en Computación apasionado por
+          la
+          programación, los algoritmos y el diseño de sistemas embebidos. Posteriormente, obtuve el grado de Maestro en
+          Tecnología de Cómputo especializandome en temas como internet de las cosas y cómputo en la nube. En 2023
+          obtuve el
+          grado de doctorado en Ingeniería de Sistemas Robóticos y Mecatrónicos donde me encuentro trabajando temas de
+          algoritmos inteligentes aplicados a nanocuadrotores.
         </p>
 
-        <p class="text-semblanza">
-          Soy un apasionado de la enseñanza. He impartido cursos a nivel licenciatura en la Universidad Autónoma de la Ciudad de México y la Universidad Autónoma Metropolitana tales como Introducción a la Programación, Métodos numéricos,
+        <p>
+          Soy un apasionado de la enseñanza. He impartido cursos a nivel licenciatura en la Universidad Autónoma de la
+          Ciudad de México y la Universidad Autónoma Metropolitana tales como Introducción a la Programación, Métodos
+          numéricos,
           Laboratorio de Electromagnetismo y Programación Estructurada.
         </p>
+      </section>
 
-        <h1>Intereses</h1>
+      <section class="section">
+        <h2>Intereses</h2>
 
-        <div class="intereses-container">
+        <div>
           <span class="intereses-badge">Sistemas embebidos</span>
           <span class="intereses-badge">Sistemas autónomos</span>
           <span class="intereses-badge">Algoritmos inteligentes</span>
@@ -79,99 +109,75 @@
           <span class="intereses-badge">Programación</span>
           <span class="intereses-badge">Preservación digital</span>
         </div>
+      </section>
 
-        <h1>Experiencia profesional</h1>
-
+      <section class="section">
+        <h2>Formación académica</h2>
         <div class="timeline">
-          <div class="container">
-            <h2 class="timeline-title">Profesor Asociado D</h2>
-            <h3 class="timeline-date">2023-2024</h3>
-            <p class="timeline-text">
-              Universidad Autónoma Metropolitana Unidad Cuajimalpa<br />
-              División de Ciencias de la Comunicación y Diseño<br />
-              Departamento de Tecnologías de la Información
-            </p>
+          <div class="timeline-section">
+            <div class="timeline-section-title">Doctorado en Ingeniería de Sistemas Robóticos y Mecatrónicos</div>
+            <div class="timeline-section-date">2020-2023</div>
+            <div class="institution"><a href="https://www.cidetec.ipn.mx" target="_blank">CIDETEC-Instituto Politécnico
+                Nacional</a></div>
+            <div class="professional-id">Cédula profesional: <span>14042412</span></div>
           </div>
-          <div class="container">
-            <h2 class="timeline-title">Profesor de Asignatura</h2>
-            <h3 class="timeline-date">2022</h3>
-            <p class="timeline-text">
-              Universidad Autónoma de la Ciudad de México Plantel Cuautepec<br />
-              Colegio de Ciencia y Tecnología<br />
-              Licenciatura en Ingeniería de software
-            </p>
+          <div class="timeline-section">
+            <div class="timeline-section-title">Maestría en Tecnología de Cómputo</div>
+            <div class="timeline-section-date">2018-2020</div>
+            <div class="institution"><a href="https://www.cidetec.ipn.mx" target="_blank">CIDETEC-Instituto Politécnico
+                Nacional</a></div>
+            <div class="professional-id">Cédula Profesional: <span>12620285</span></div>
           </div>
-          <div class="container">
-            <h2 class="timeline-title">Ayudante Academico B</h2>
-            <h3 class="timeline-date">2014-2017</h3>
-            <p class="timeline-text">
-              Universidad Autónoma Metropolitana Unidad Azcapotzalco<br />
-              División de Ciencias Básicas e Ingeniería<br />
-              Departamento de Energía
-            </p>
-          </div>
-          <div class="container">
-            <h2 class="timeline-title">Asistente de Procesos Escolares</h2>
-            <h3 class="timeline-date">2010-2015</h3>
-            <p class="timeline-text">
-              Universidad Autónoma Metropolitana Unidad Azcapotzalco<br />
-              Asistente en los procesos de inscripción, re-inscripción, encuestador y visitas guiadas.<br />
-            </p>
-          </div>
-          <div class="container">
-            <h2 class="timeline-title">Capturista</h2>
-            <h3 class="timeline-date">2009</h3>
-            <p class="timeline-text">
-              Instituto Federal Electroral<br />
-              Atención al público para captura y expedición de credenciales.<br />
-            </p>
-          </div>
-          <div class="container">
-            <h2 class="timeline-title">Técnico en Computación</h2>
-            <h3 class="timeline-date">2005-2006</h3>
-            <p class="timeline-text">
-              Sistema de Transporte Colectivo Metro<br />
-              Coordinación de Transportación de Línea 4<br />
-              Servició Social y Prácticas Profesionales elaborando formato y captura de bases de datos.
-            </p>
+          <div class="timeline-section">
+            <div class="timeline-section-title">Licenciatura en Ingeniería en Computación</div>
+            <div class="timeline-section-date">2008-2016</div>
+            <div class="institution"><a href="https://azc.uam.mx" target="_blank">Universidad Autónoma Metropolitana
+                Unidad Azcapotzalco</a></div>
+            <div class="professional-id">Cédula Profesional: <span>10858939</span></div>
           </div>
         </div>
+      </section>
 
-        <h1>Formación académica</h1>
+      <section class="section">
+        <h2>Experiencia profesional</h2>
+
         <div class="timeline">
-          <div class="container">
-            <h2 class="timeline-title">Doctorado en Ingeniería de Sistemas Robóticos y Mecatrónicos</h2>
-            <h3 class="timeline-date">2020-2023</h3>
-            <p class="timeline-text">
-              Centro de Innovación y Desarrollo Tecnológico en Cómputo<br />
-              Instituto Polítecnico Nacional<br />
-              Tesis: Micro algoritmo inteligente para nano cuadrotores autónomos en la evasión de obstáculos dinámicos
-            </p>
+          <div class="timeline-section">
+            <div class="timeline-section-title">Profesor de Asignatura</div>
+            <div class="timeline-section-date">2025</div>
+            <div class="work-place">Universidad Autónoma de la Ciudad de México</div>
+            <div class="work-department">Colegio de Ciencia y Tecnología</div>
+            <div class="work-description">Licenciatura en Ingeniería de software</div>
           </div>
-          <div class="container">
-            <h2 class="timeline-title">Maestría en Tecnología de Cómputo</h2>
-            <h3 class="timeline-date">2018-2020</h3>
-            <p class="timeline-text">
-              Centro de Innovación y Desarrollo Tecnológico en Cómputo<br />
-              Instituto Polítecnico Nacional<br />
-              Tesis: Monitoreo de la contaminación en ciudades inteligentes utilizando Internet de las cosas.<br />
-              Graduado con <strong>Mención Honorífica</strong><br />
-              Cédula Profesional: 12620285
-            </p>
+          <div class="timeline-section">
+            <div class="timeline-section-title">Profesor Asociado D</div>
+            <div class="timeline-section-date">2023-2024</div>
+            <div class="work-place">Universidad Autónoma Metropolitana</div>
+            <div class="work-department">División de Ciencias de la Comunicación y Diseño</div>
+            <div class="work-description">Departamento de Tecnologías de la Información</div>
           </div>
-          <div class="container">
-            <h2 class="timeline-title">Licenciatura en Ingeniería en Computación</h2>
-            <h3 class="timeline-date">2008-2016</h3>
-            <p class="timeline-text">
-              Universidad Autónoma Metropolitana Unidad Azcapotzalco<br />
-              Cédula Profesional: 10858939
-            </p>
+          <div class="timeline-section">
+            <div class="timeline-section-title">Profesor de Asignatura</div>
+            <div class="timeline-section-date">2022</div>
+            <div class="work-place">Universidad Autónoma de la Ciudad de México Plantel Cuautepec</div>
+            <div class="work-department">Colegio de Ciencia y Tecnología</div>
+            <div class="work-description">Licenciatura en Ingeniería de software</div>
+          </div>
+          <div class="timeline-section">
+            <div class="timeline-section-title">Ayudante Academico B</div>
+            <div class="timeline-section-date">2014-2017</div>
+            <div class="work-place">Universidad Autónoma Metropolitana Unidad Azcapotzalco</div>
+            <div class="work-department">División de Ciencias Básicas e Ingeniería</div>
+            <div class="work-description">Departamento de Energía</div>
           </div>
         </div>
-      </div>
-    </section>
-    <footer>
-      <p>2025 &copy; Rodrigo Vázquez-López</p>
-    </footer>
-  </body>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>2025 &copy; Rodrigo Vázquez-López</p>
+  </footer>
+</body>
+
 </html>
