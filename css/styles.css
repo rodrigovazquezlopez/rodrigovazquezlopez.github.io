@@ -379,15 +379,8 @@ footer {
 
 /************** Media queries **************/
 @media only screen and (max-width: 1024px) {
-    .left-layout {
-        width: 100%;
-        min-height: 100%;
-        padding: 1.5rem;
-    }
-
-    .right-layout {
-        width: 100%;
-        padding: 1.5rem;
+    .basic-info h1 {
+        font-size: 1.5em;
     }
 
     .img-about-me {
@@ -401,7 +394,7 @@ footer {
     /******** docencia *********/
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
     .nav-bar-button {
         display: none;
     }
@@ -412,6 +405,18 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+
+    .contact-info {
+        width: 100%;
+        min-height: 100%;
+        padding: 1.5rem;
+    }
+
+    .main-content{
+        width: 100%;
+        padding: 1.5rem;
+    }
+
     .nav-bar-button {
         display: block;
     }
