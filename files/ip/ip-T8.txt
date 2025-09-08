@@ -1,0 +1,6 @@
+Traer el pseudocódigo de los siguientes procedimientos:
+
+1. Trayecto de su casa a la universidad
+2. Preparación de una pizza
+3. Inscribir sus materias al siguiente semestre
+4. Resolver una ecuación de primer grado

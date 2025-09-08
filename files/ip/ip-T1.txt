@@ -1,0 +1,3 @@
+Construya los primeros 30 números de un sistema numérico base 5 que usa los símbolos griegos:
+
+Alpha, beta, gama, delta, épsilon.

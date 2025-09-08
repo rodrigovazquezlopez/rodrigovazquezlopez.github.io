@@ -1,0 +1,7 @@
+Realice las siguientes conversiones:
+
+255 a binario
+77 a binario
+666 a octal
+1417 a octal
+4095 a hexadecimal
