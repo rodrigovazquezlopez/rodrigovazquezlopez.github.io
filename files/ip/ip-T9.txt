@@ -1,0 +1,6 @@
+Entregue el pseudocódigo en PseInt resuelva los siguientes problemas. Entregyue los archivos en classrooom
+
+1) Calcular el área de un triángulo
+2) Perímetro y área de un hexágono
+3) La solución a la ecuación y=mx+b
+4) Solución a la ecuación C=9/5(F-32)
